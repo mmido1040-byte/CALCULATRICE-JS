@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Calculatrice JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+  <div id="screen">
+  <button class="historyIcon" onclick="toggleHistory()">⏱</button>
+
+  <div id="calcView">
+    <div id="operation"></div>
+    <div id="result">0</div>
+  </div>
+
+  <div id="historyView">
+    <h4>Historique</h4>
+    <ul id="historyList"></ul>
+  </div>
+</div>
+
+
+  <div class="buttons">
+    <button class="action" onclick="clearAll()">AC</button>
+    <button onclick="add('()')">( )</button>
+    <button onclick="add('%')">%</button>
+    <button class="operator" onclick="add('/')">÷</button>
+
+    <button onclick="add('7')">7</button>
+    <button onclick="add('8')">8</button>
+    <button onclick="add('9')">9</button>
+    <button class="operator" onclick="add('*')">×</button>
+
+    <button onclick="add('4')">4</button>
+    <button onclick="add('5')">5</button>
+    <button onclick="add('6')">6</button>
+    <button class="operator" onclick="add('-')">−</button>
+
+    <button onclick="add('1')">1</button>
+    <button onclick="add('2')">2</button>
+    <button onclick="add('3')">3</button>
+    <button class="operator" onclick="add('+')">+</button>
+
+    <button class="zero" onclick="add('0')">0</button>
+    <button onclick="add('.')">.</button>
+    <button onclick="backspace()">⌫</button>
+    <button class="equal" onclick="calculate()">=</button>
+  </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
